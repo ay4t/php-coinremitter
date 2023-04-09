@@ -17,6 +17,7 @@
  * Date      	By	Comments 
 
  * ----------	---	---------------------------------------------------------
+ * 
  */
 
 
@@ -25,7 +26,7 @@ namespace Ay4t\CoinRemitter;
 use Ay4t\CoinRemitter\Interface\ApiClient;
 use Exception;
 
-class RestClient  implements ApiClient
+final class RestClient  implements ApiClient
 {
 
     /**
@@ -151,7 +152,7 @@ class RestClient  implements ApiClient
 
     }
 
-    public function getData()
+    public function getData( $get_data = true )
     {
         return $this->data;
     }

@@ -45,9 +45,14 @@ $result = $coinremitter->result();
 var_dump($result); */
 
 // contoh untuk validate address
-$coinremitter = new ValidateAddress;
+/* $coinremitter = new ValidateAddress;
 $coinremitter->setAddress('nghxtJQuYyuEjZND3745fvhXcpG8QrXWt8');
-
 var_dump($coinremitter->result());
-// var_dump($coinremitter->getData());
-var_dump($coinremitter->isValidAddress());
+var_dump($coinremitter->isValidAddress()); */
+
+// contoh untuk withdraw
+/* $coinremitter = new \Ay4t\CoinRemitter\Command\Withdraw;
+$coinremitter->setAddress('nghxtJQuYyuEjZND3745fvhXcpG8QrXWt8');
+$coinremitter->setAmount(100000);
+var_dump($coinremitter->result());
+var_dump($coinremitter->getData()); */
